@@ -1,0 +1,14 @@
+sudo docker run --gpus all -it nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04 /bin/bash
+
+sudo docker run --gpus all testdocker nvidia-smi
+
+docker build -it <dockername> , --no-cache
+
+docker ps -a
+docker stop <containe_id>
+docker rm <containe_id>
+
+docker images
+docker rmi <image_id>
+
+sudo docker build -t 'jc_docker/jdk_8' -f JC.Dockerfile .
